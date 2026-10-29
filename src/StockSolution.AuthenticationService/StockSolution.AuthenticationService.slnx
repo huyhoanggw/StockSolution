@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="StockSolution.AuthenticationService.Application/StockSolution.AuthenticationService.Application.csproj" />
+  <Project Path="StockSolution.AuthenticationService.Domain/StockSolution.AuthenticationService.Domain.csproj" />
+  <Project Path="StockSolution.AuthenticationService.Infrastructure/StockSolution.AuthenticationService.Infrastructure.csproj" />
+  <Project Path="StockSolution.AuthenticationService.Presentation/StockSolution.AuthenticationService.Presentation.csproj" />
+</Solution>
