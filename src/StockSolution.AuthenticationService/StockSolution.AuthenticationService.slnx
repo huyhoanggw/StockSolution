@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="../StockSolution.SharedLibrary/StockSolution.SharedLibrary/StockSolution.SharedLibrary.csproj" />
   <Project Path="StockSolution.AuthenticationService.Application/StockSolution.AuthenticationService.Application.csproj" />
+  <Project Path="StockSolution.AuthenticationService.Contracts/StockSolution.AuthenticationService.Contracts.csproj" Id="51afc781-1ec5-475f-82a4-400d694ee949" />
   <Project Path="StockSolution.AuthenticationService.Domain/StockSolution.AuthenticationService.Domain.csproj" />
   <Project Path="StockSolution.AuthenticationService.Infrastructure/StockSolution.AuthenticationService.Infrastructure.csproj" />
   <Project Path="StockSolution.AuthenticationService.Presentation/StockSolution.AuthenticationService.Presentation.csproj" />

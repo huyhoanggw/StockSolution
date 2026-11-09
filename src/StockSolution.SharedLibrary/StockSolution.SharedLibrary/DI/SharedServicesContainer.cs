@@ -31,7 +31,7 @@ namespace StockSolution.SharedLibrary.DI
         public static IApplicationBuilder UseSharedPolicies(this IApplicationBuilder app)
         {
             app.UseMiddleware<GlobalException>();
-            app.UseMiddleware<ListenToOnlyApiGateway>();
+            //    app.UseMiddleware<ListenToOnlyApiGateway>();
             return app;
         }
     }

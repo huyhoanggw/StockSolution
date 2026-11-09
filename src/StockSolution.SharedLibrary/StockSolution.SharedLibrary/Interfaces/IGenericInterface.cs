@@ -11,9 +11,9 @@ namespace StockSolution.SharedLibrary.Interfaces
 {
     public interface IGenericInterface<T> where T : class
     {
-        Task<ReponseResult<T>> CreateAsync(T entity);
-        Task<ReponseResult<T>> UpdateAsync(T entity);
-        Task<ReponseResult<T>> DeleteAsync(string id);
+        Task<T> CreateAsync(T entity);
+        Task<bool> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(Guid Id);
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> FindByIdAsync(Guid Id);
         Task<T> GetByAsync(Expression<Func<T, bool>> predicate);

@@ -14,13 +14,10 @@ namespace StockSolution.AuthenticationService.Infrastructure.Database
         {
         }
 
-        protected ApplicationDbcontext()
-        {
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<ApplicationUser>(options =>
+            modelBuilder.Entity<User>(options =>
             {
                 options.HasKey(x => x.Id);
                 options.Property(x => x.UserName).IsRequired();
@@ -36,6 +33,17 @@ namespace StockSolution.AuthenticationService.Infrastructure.Database
                 options.HasOne(x => x.Role).WithMany().HasForeignKey(x => x.RoleId).OnDelete(DeleteBehavior.Restrict);
                 options.HasOne(x => x.Permission).WithMany().HasForeignKey(x => x.PermissionId).OnDelete(DeleteBehavior.Restrict);
             });
+            modelBuilder.Entity<UserRole>(options =>
+            {
+                options.HasKey(x => new { x.UserId, x.RoleId });
+                options.HasOne(x => x.User).WithMany().HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Restrict);
+                options.HasOne(x => x.Role).WithMany().HasForeignKey(x => x.RoleId).OnDelete(DeleteBehavior.Restrict);
+            });
         }
+        public DbSet<User> User { get; set; }
+        public DbSet<Permission> Permission { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<RolePermission> RolePermission { get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
     }
 }

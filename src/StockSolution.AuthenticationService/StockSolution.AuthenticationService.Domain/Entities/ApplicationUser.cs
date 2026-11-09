@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockSolution.AuthenticationService.Domain.Entities
 {
-    public class ApplicationUser
+    public class User
     {
         public Guid Id { get; set; }
         public string UserName { get; set; }
