@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\StockSolution.SharedLibrary\StockSolution.SharedLibrary\StockSolution.SharedLibrary.csproj" />
+    <ProjectReference Include="..\StockSolution.MarketDataService.Domain\StockSolution.MarketDataService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

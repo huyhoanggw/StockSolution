@@ -5,6 +5,7 @@ using Serilog;
 using Serilog.Core;
 using StockSolution.SharedLibrary.DI.Mongo;
 using StockSolution.SharedLibrary.Middleware;
+using StockSolution.SharedLibrary.MongoDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,12 +18,14 @@ namespace StockSolution.SharedLibrary.DI
     {
         public static IServiceCollection AddSharedServices(this IServiceCollection services, IConfiguration config, string fileName)
         {
-            MongoDbExtensions.AddMongoDb(services, config);
+
+
+            services.AddSingleton<MongoDbService>(new MongoDbService(config));
             Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.Console()
-                .WriteTo.File($"logs/{fileName}", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
+           .MinimumLevel.Debug()
+           .WriteTo.Console()
+           .WriteTo.File($"logs/{fileName}", rollingInterval: RollingInterval.Day)
+           .CreateLogger();
             services.AddSerilog();
             // add jwt
             JWTAuthenticationScheme.AddJWTAuthenticationScheme(services, config);

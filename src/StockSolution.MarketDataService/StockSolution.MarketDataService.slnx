@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../StockSolution.SharedLibrary/StockSolution.SharedLibrary/StockSolution.SharedLibrary.csproj" />
+  <Project Path="StockSolution.MarketDataService.Application/StockSolution.MarketDataService.Application.csproj" />
+  <Project Path="StockSolution.MarketDataService.Domain/StockSolution.MarketDataService.Domain.csproj" />
+  <Project Path="StockSolution.MarketDataService.Infrastructure/StockSolution.MarketDataService.Infrastructure.csproj" />
+  <Project Path="StockSolution.MarketDataService.Presentation/StockSolution.MarketDataService.Presentation.csproj" />
+</Solution>
