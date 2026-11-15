@@ -13,7 +13,5 @@ namespace StockSolution.MarketDataService.Domain.Entities
         public string Symbol { get; set; }
         public string Name { get; set; }
         public string Exchange { get; set; } = null!;
-        public DateTime CreateAt { get; set; }
-        public DateTime UpdateAt { get; set; }
     }
 }

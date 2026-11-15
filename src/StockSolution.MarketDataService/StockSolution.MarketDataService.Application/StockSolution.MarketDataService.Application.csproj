@@ -7,8 +7,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Feature\Commands\" />
-		<Folder Include="Feature\Queries\" />
+	  <PackageReference Include="MediatR" Version="15.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\StockSolution.SharedLibrary\StockSolution.SharedLibrary\StockSolution.SharedLibrary.csproj" />
+		<ProjectReference Include="..\StockSolution.MarketDataService.Domain\StockSolution.MarketDataService.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

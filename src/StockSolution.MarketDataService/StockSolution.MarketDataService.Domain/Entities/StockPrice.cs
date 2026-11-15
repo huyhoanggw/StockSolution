@@ -18,12 +18,6 @@ namespace StockSolution.MarketDataService.Domain.Entities
 
         public decimal ChangePercent { get; set; }
 
-        public decimal ReferencePrice { get; set; }
-
-        public decimal CeilingPrice { get; set; }
-
-        public decimal FloorPrice { get; set; }
-
         public decimal OpenPrice { get; set; }
 
         public decimal HighestPrice { get; set; }
@@ -32,8 +26,7 @@ namespace StockSolution.MarketDataService.Domain.Entities
 
         public long TotalVolume { get; set; }
 
-        public DateTime TradingDate { get; set; }
+        public DateTime Timestamp { get; set; } = DateTime.UtcNow;
 
-        public DateTime UpdatedAt { get; set; }
     }
 }

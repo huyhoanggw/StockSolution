@@ -13,7 +13,7 @@ namespace StockSolution.SharedLibrary.BaseRepository
 {
     public class BaseRepositoryForMongoDb<T> : IGenericInterface<T> where T : BaseEntity
     {
-        IMongoCollection<T> _collection;
+        public readonly IMongoCollection<T> _collection;
         public BaseRepositoryForMongoDb(MongoDbService mongodb)
         {
             _collection = mongodb.Database.GetCollection<T>(typeof(T).Name);

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\StockSolution.SharedLibrary\StockSolution.SharedLibrary\StockSolution.SharedLibrary.csproj" />
+    <ProjectReference Include="..\StockSolution.MarketDataService.Application\StockSolution.MarketDataService.Application.csproj" />
     <ProjectReference Include="..\StockSolution.MarketDataService.Domain\StockSolution.MarketDataService.Domain.csproj" />
   </ItemGroup>
 
