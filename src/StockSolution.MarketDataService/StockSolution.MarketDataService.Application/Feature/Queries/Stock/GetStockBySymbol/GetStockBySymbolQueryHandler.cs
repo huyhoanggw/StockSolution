@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace StockSolution.MarketDataService.Application.Feature.Queries.Stock.GetStockBySymbol
 {
-    public class GetStockBySymbolQueryHandler(IStockRepository stockRepository) : IRequestHandler<GetStockBySymbolQuery, ReponseResult<StockSolution.MarketDataService.Domain.Entities.Stock>>a
+    public class GetStockBySymbolQueryHandler(IStockRepository stockRepository) : IRequestHandler<GetStockBySymbolQuery, ReponseResult<StockSolution.MarketDataService.Domain.Entities.Stock>>
     {
         public async Task<ReponseResult<Domain.Entities.Stock>> Handle(GetStockBySymbolQuery request, CancellationToken cancellationToken)
         {

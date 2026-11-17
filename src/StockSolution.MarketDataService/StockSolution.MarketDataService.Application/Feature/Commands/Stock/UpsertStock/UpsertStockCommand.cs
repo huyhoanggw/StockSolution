@@ -13,6 +13,6 @@ namespace StockSolution.MarketDataService.Application.Feature.Commands.Stock.Ups
         public string Symbol { get; set; }
         public string Name { get; set; }
         public string Exchange { get; set; } = null!;
-    {
+
     }
 }

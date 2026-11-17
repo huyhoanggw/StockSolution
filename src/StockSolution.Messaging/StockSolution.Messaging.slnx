@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../StockSolution.SharedLibrary/StockSolution.SharedLibrary/StockSolution.SharedLibrary.csproj" />
+  <Project Path="StockSolution.Messaging/StockSolution.Messaging.csproj" />
+</Solution>

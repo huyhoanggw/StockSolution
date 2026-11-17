@@ -14,8 +14,8 @@ namespace StockSolution.SharedLibrary.MongoDB
 
         public MongoDbService(IConfiguration config)
         {
-            var client = new MongoClient(config.GetConnectionString("MongoDbConnectionString"));
-            _database = client.GetDatabase(config["MongoDbName"]);
+            var client = new MongoClient(config["MongoDbSettings:MongoDbConnectionString"]);
+            _database = client.GetDatabase(config["MongoDbSettings:MongoDbName"]);
         }
         public IMongoDatabase Database { get { return _database; } }
     }

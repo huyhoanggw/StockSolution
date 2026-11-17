@@ -11,6 +11,6 @@ namespace StockSolution.MarketDataService.Application.Feature.Queries.Stock.GetS
     public class GetStockBySymbolQuery : IRequest<ReponseResult<StockSolution.MarketDataService.Domain.Entities.Stock>>
     {
         public string Symbol { get; set; }
-    {
+
     }
 }
