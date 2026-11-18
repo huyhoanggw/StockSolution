@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../StockSolution.Messaging/StockSolution.Messaging/StockSolution.Messaging.csproj" />
+  <Project Path="../StockSolution.SharedLibrary/StockSolution.SharedLibrary/StockSolution.SharedLibrary.csproj" />
+  <Project Path="StockSolution.PortfolioService.Application/StockSolution.PortfolioService.Application.csproj" />
+  <Project Path="StockSolution.PortfolioService.Domain/StockSolution.PortfolioService.Domain.csproj" />
+  <Project Path="StockSolution.PortfolioService.Infrastructure/StockSolution.PortfolioService.Infrastructure.csproj" />
+  <Project Path="StockSolution.PortfolioService.Presentation/StockSolution.PortfolioService.Presentation.csproj" />
+</Solution>
