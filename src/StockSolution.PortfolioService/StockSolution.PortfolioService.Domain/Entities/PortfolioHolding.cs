@@ -9,7 +9,7 @@ namespace StockSolution.PortfolioService.Domain.Entities
 {
     public class PortfolioHolding : SharedLibrary.SqlServer.BaseEntity
     {
-        public Guid ProfolioId { get; set; }
+        public Guid PorfolioId { get; set; }
         public Portfolio Portfolio { get; set; }
         public string Symbol { get; set; }
         public decimal Quantity { get; set; }

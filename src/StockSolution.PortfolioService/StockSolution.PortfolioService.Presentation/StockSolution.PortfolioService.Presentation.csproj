@@ -4,10 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9e9f396d-7cc3-427d-8262-31246fa9582f</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\StockSolution.Messaging\StockSolution.Messaging\StockSolution.Messaging.csproj" />
+    <ProjectReference Include="..\..\StockSolution.SharedLibrary\StockSolution.SharedLibrary\StockSolution.SharedLibrary.csproj" />
+    <ProjectReference Include="..\..\StockSolution.SqlServer\StockSolution.SqlServer\StockSolution.SqlServer.csproj" />
+    <ProjectReference Include="..\StockSolution.PortfolioService.Application\StockSolution.PortfolioService.Application.csproj" />
+    <ProjectReference Include="..\StockSolution.PortfolioService.Infrastructure\StockSolution.PortfolioService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

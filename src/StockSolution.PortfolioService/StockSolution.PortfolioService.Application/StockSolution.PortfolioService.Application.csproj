@@ -10,4 +10,9 @@
     <ProjectReference Include="..\StockSolution.PortfolioService.Domain\StockSolution.PortfolioService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Feature\Commands\" />
+    <Folder Include="Feature\Queries\" />
+  </ItemGroup>
+
 </Project>

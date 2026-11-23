@@ -17,7 +17,7 @@ namespace StockSolution.PortfolioService.Infrastructure.Database
             var direct = Directory.GetCurrentDirectory();
             var fullpath = Path.GetFullPath("../StockSolution.PortfolioService.Presentation/appsettings.json", direct);
 
-            var config = new ConfigurationBuilder().AddJsonFile(fullpath).Build();
+            var config = new ConfigurationBuilder().AddJsonFile(fullpath).AddUserSecrets("9e9f396d-7cc3-427d-8262-31246fa9582f").Build();
             var options = new DbContextOptionsBuilder();
             options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
             return new PortfolioDbcontext(options.Options);

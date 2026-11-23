@@ -23,6 +23,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\StockSolution.SharedLibrary\StockSolution.SharedLibrary\StockSolution.SharedLibrary.csproj" />
+		<ProjectReference Include="..\..\StockSolution.SqlServer\StockSolution.SqlServer\StockSolution.SqlServer.csproj" />
 		<ProjectReference Include="..\StockSolution.AuthenticationService.Application\StockSolution.AuthenticationService.Application.csproj" />
 		<ProjectReference Include="..\StockSolution.AuthenticationService.Domain\StockSolution.AuthenticationService.Domain.csproj" />
 	</ItemGroup>

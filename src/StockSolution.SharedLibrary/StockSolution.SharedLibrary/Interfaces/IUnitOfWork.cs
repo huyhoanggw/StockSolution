@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace StockSolution.SharedLibrary.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
+        public Task<int> SavechangeAsync(CancellationToken cancellationToken = default);
+        public Task BeginTransaction(CancellationToken cancellationToken = default);
+        public Task CommitTransaction(CancellationToken cancellationToken = default);
+        public Task RollbackTransaction(CancellationToken cancellationToken = default);
     }
 }

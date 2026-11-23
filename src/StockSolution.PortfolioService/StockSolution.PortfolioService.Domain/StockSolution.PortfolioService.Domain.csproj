@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\StockSolution.SharedLibrary\StockSolution.SharedLibrary\StockSolution.SharedLibrary.csproj" />
+    <ProjectReference Include="..\..\StockSolution.SqlServer\StockSolution.SqlServer\StockSolution.SqlServer.csproj" />
   </ItemGroup>
 
 </Project>

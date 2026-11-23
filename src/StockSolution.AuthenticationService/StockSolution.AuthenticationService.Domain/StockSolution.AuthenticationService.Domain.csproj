@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\StockSolution.SqlServer\StockSolution.SqlServer\StockSolution.SqlServer.csproj" />
+  </ItemGroup>
+
 </Project>

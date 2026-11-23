@@ -24,12 +24,12 @@ namespace StockSolution.PortfolioService.Infrastructure.Database
             modelBuilder.Entity<Portfolio>(options =>
             {
                 options.HasKey(x => x.Id);
-                options.HasMany(x => x.Holdings).WithOne(x => x.Portfolio).HasForeignKey(x => x.ProfolioId).OnDelete(DeleteBehavior.Cascade);
+                options.HasMany(x => x.Holdings).WithOne(x => x.Portfolio).HasForeignKey(x => x.PorfolioId).OnDelete(DeleteBehavior.Cascade);
             });
             modelBuilder.Entity<PortfolioHolding>(options =>
             {
                 options.HasKey(x => x.Id);
-                options.HasIndex(x => new { x.ProfolioId, x.Symbol }).IsUnique();
+                options.HasIndex(x => new { x.PorfolioId, x.Symbol }).IsUnique();
             });
             modelBuilder.Entity<PortfolioTransaction>(options =>
             {

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Core;
+using StockSolution.SharedLibrary.Interfaces;
 using StockSolution.SharedLibrary.Middleware;
 using StockSolution.SharedLibrary.MongoDB;
 using System;
